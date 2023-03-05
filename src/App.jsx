@@ -22,9 +22,7 @@ function App() {
     <Blog/>
 
     </Route>
-  <Route>
-    <Redirect path="/"/>
-  </Route>
+     <Redirect to='/'/>
     </Switch>
 
     </Router>
