@@ -5,6 +5,10 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily:{
+      Poppins:['Poppins','Poppins'],
+      SS:['Stardos','Stardos Stencil','cursive']
+    },
     extend: {},
   },
   plugins: [],
