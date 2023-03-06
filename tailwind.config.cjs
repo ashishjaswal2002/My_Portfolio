@@ -9,7 +9,16 @@ module.exports = {
       Poppins:['Poppins','Poppins'],
       SS:['Stardos','Stardos Stencil','cursive']
     },
-    extend: {},
+    fontSize:{
+      custom :'62.5%'
+    },
+   
+    extend: {
+      backgroundImage:{
+        'superImage':"url('/src/assets/Ash.png')"
+      }
+    },
   },
   plugins: [],
 }
+

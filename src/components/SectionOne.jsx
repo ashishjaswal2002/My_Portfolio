@@ -1,35 +1,31 @@
-import React from 'react'
-import image from '../assets/Ash.png'
+import React from "react";
+import image from "../assets/Ash.png";
 export const SectionOne = () => {
   return (
-     <section className=''>
+    <section className="relative">
+      <div className="absolute left-0 top-5">
+        <h2 className="">
+          Hola,this is <span>&lt;/Ashish&gt;</span>
+        </h2>
+        <h3>A fully jammed rookie</h3>
+      </div>
 
-        <div className='w-[215px] h-[543px] absolute right-0 top-[6px]'>
-            <img src={image} alt="Person holding 500 rupee note" className='w-full h-full object-cover lg:w-[350px] lg:h-[700px]' />
-            </div>
-            {/* Typo section */}
-         
-         
-<div class="  top-[112px] absolute left-[24px] gap-[16px] h-[377px] w-[193px] text-white  leading-[25.5px] p-0 flex flex-col ">
+      <div className="absolute top-24 flex flex-col gap-7 mt-2">
+        <div>
+          <h1 className="">No stack to full stack</h1>
+        </div>
+        <div>
+          <h1>Love to work with others.</h1>
+        </div>
 
-             <div className='w-[169px] h-[55px] leading-[26.21px] tracking-tighter'>
-            <h3 className='text-[17px] font-Poppins font-normal '>Hola, this is <span className='font-SS font-bold'>&lt;/Ashish&gt;
-           </span> A fully jammed rookie</h3>
-         </div>
-         <div>
-            <h2>No Stack to Full Stack </h2>
+        <div>
+          <h1>
+            Learning<span>&amp;</span>Implementing
+          </h1>
+        </div>
+      </div>
 
-         </div>
-         <div>
-            <h2>Love to work with others</h2>
-
-         </div>
-         <div>
-
-            <h2>Learning <span>&</span> Implementing</h2>
-         </div>
-          </div>
-        
-     </section>
-  )
-}
+      <div className="bg-superImage w-[29em] h-[49em]  bg-cover float-right mt-[-9em]"></div>
+    </section>
+  );
+};

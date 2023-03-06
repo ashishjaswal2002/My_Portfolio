@@ -1,19 +1,22 @@
 import React from "react";
 import { HamSvg } from "../assets/HamSvg";
 import { SectionOne } from "../components/SectionOne";
-
+import { OpenNavBar } from "../components/OpenNavBar";
 export const Home = () => {
   return (
-    <div className="h-screen bgcolour ">
+    <div className=" min-h-screen bgcolour p-6 m-0 ">
       <header className="">
-   <nav className="absolute mt-[1.5em] ">
+   <nav className="">
 
       <HamSvg className="" />
+
+      {/* Show open nav bar here */}
+   
 </nav>
-        {/* Navbar which contains home projects and blog */}
+        {/* OpenNavbar which contains home projects and blog */}
       </header>
 
-      <main>
+      <main className="mt-16 text-white">
     
     <SectionOne/>
 
