@@ -9,9 +9,7 @@ module.exports = {
       Poppins:['Poppins','Poppins'],
       SS:['Stardos','Stardos Stencil','cursive']
     },
-    fontSize:{
-      custom :'62.5%'
-    },
+   
    
     extend: {
       backgroundImage:{

@@ -4,7 +4,7 @@ import { SectionOne } from "../components/SectionOne";
 import { OpenNavBar } from "../components/OpenNavBar";
 export const Home = () => {
   return (
-    <div className=" min-h-screen bgcolour p-6 m-0 ">
+    <div className=" min-h-screen bgcolour p-10 m-0 ">
       <header className="">
    <nav className="">
 
@@ -16,7 +16,7 @@ export const Home = () => {
         {/* OpenNavbar which contains home projects and blog */}
       </header>
 
-      <main className="mt-16 text-white">
+      <main className="mt-14 text-white">
     
     <SectionOne/>
 
