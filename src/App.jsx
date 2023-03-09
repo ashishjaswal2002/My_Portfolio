@@ -1,16 +1,37 @@
-import {} from 'flowbite'
-
-
+import {BrowserRouter,Route,Routes,Navigate} from 'react-router-dom';
+import { BlogPage } from '../pages/BlogPage';
+import { HomePage } from '../pages/HomePage';
+import { ProjectPage } from '../pages/ProjectPage';
 function App() {
 
 
   return (
-    <div className="text-teal-500">
-      <h1>Hello Fuckin World</h1>
+   <>
+   <BrowserRouter>
+
+<Routes>
+
+   <Route path='/' element={<HomePage/>}/>
+   <Route path='/blog' element={<BlogPage/>}/>
+    <Route path='/project' element={<ProjectPage/>}/>
+   <Route path="*" element={<Navigate to="/"/>}/>
 
 
-    </div>
+</Routes>
+   
+  
+   
+   
+   
+   
+   </BrowserRouter>
+  
+      
+   </>
+      
+
+  
   )
 }
 
-export default App
+export default App;
