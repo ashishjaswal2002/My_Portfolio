@@ -1,9 +1,12 @@
 import React from 'react'
 
+import HamburgerMenu from '../src/components/HamburgerMenu';
 export const HomePage = () => {
   return (
       <header>
-        <h1>This is home secrtion </h1>
+       
+       
+       <HamburgerMenu/>
       </header>
   )
 }
