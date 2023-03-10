@@ -14,7 +14,7 @@ import HomeWorkIcon from '@mui/icons-material/HomeWork';
 import { DrawerIcon } from '../assets/DrawerIcon';
 import { CloseIcon } from '../assets/CloseIcon';
 
-
+import { ReactDOM } from 'react-dom';
 
  function HamburgerMenu() {
   const [state, setState] = React.useState({
@@ -59,7 +59,7 @@ function getIconForArray(text) {
   >
     <List>
       <ListItem disablePadding >
-        <ListItemButton sx={{display:'flex',justifyContent:'flex-end'}}  onClick={toggleDrawer(anchor, false)}>
+        <ListItemButton className='custom_drawer' onClick={toggleDrawer(anchor, false)} style={{display:'flex',justifyContent:'flex-end'}}>
           <CloseIcon style={{}}/>
         </ListItemButton>
       </ListItem>
@@ -78,10 +78,11 @@ function getIconForArray(text) {
   );
 
   return (
-    <div >
+
+      <>
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)} style={{display:'flex',justifyContent:'flex-start',margin:0,padding:0}}><DrawerIcon/></Button>
+          <Button onClick={toggleDrawer(anchor, true)} ><DrawerIcon className="cursor-pointer " /></Button>
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}
@@ -93,7 +94,8 @@ function getIconForArray(text) {
           </SwipeableDrawer>
         </React.Fragment>
       ))}
-    </div>
+      </>
+  
   );
 }
 export default HamburgerMenu;
