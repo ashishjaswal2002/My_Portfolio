@@ -6,7 +6,7 @@ import { NodeJs } from "../assets/SVG/NodeJs";
 
 export const SectionThree = () => {
   return (
-    <section className="text-white mt-10 w-full backdrop-blur-md backdrop-opacity-50 bg-gray-800 rounded-lg h-auto font-Poppins sm:text-[1.2rem] md:text-[1.9rem] ">
+    <section className="text-white mt-10 w-full backdrop-blur-md backdrop-opacity-50 bg-gray-800 rounded-lg h-auto font-Poppins sm:text-[1.2rem] md:text-[1.4rem] ">
       <div className="p-4">
         <h2>My Tech Stack</h2>
       </div>

@@ -5,17 +5,17 @@ import { LinkedIn } from "../assets/LinkedIn";
 import { Link } from "react-router-dom";
 export const SectionFour = () => {
   return (
-    <div className=" rounded-lg p-8 h-auto text-white mt-10  sm:text-[1.3rem] md:text-[1.9rem] ">
+    <div className=" rounded-lg p-8 h-auto text-white mt-10  sm:text-[1.3rem] md:text-[1.2rem] ">
       <p className="text-center">Let's be social together!</p>
 
       <div className="flex justify-center gap-6 mt-6 items-center  ">
-        <Link to="">
+        <Link to="https://twitter.com/Ashishjas2002">
           <TwitterSvg />
         </Link>
-        <Link to="">
+        <Link to="https://github.com/ashishjaswal2002">
           <Github />
         </Link>
-        <Link to="">
+        <Link to="https://www.linkedin.com/in/ashish-jaswal-288b1a20a">
           <LinkedIn />
         </Link>
       </div>
