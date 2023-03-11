@@ -10,13 +10,13 @@ import { SectionFour } from '../src/components/SectionFour';
 export const HomePage = () => {
   return (
     <>
-      <header className="">
+      <header >
         <nav className="flex fixedd">
           <div className="hmenu">
           <HamburgerMenu/>
             
           </div>
-          <div className="">
+          <div >
             <LoveLottie />
           </div>
         </nav>
@@ -29,12 +29,15 @@ export const HomePage = () => {
           <section className="showed__up">
           <div className=" border-b-[1px]  border-gray-50  border-opacity-50">
 
-</div>
-            {/* In future some content */}
+       </div>
+        
           </section>
 
-        <SectionFour/>
+       
       </main>
+      <footer>
+        <SectionFour/>
+      </footer>
     </>
   );
 };

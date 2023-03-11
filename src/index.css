@@ -25,10 +25,7 @@ html{
 .fixedd{
     justify-content: space-between;
 }
-.svg__mar{
-    margin-right:20px;
-   
-}
+
 .centered{
     margin-top: 2em;
   display: flex;
