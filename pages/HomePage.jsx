@@ -4,6 +4,8 @@ import HamburgerMenu from "../src/components/HamburgerMenu";
 import LoveLottie from "../src/assets/Love";
 import { SectionOne } from "../src/components/SectionOne";
 import { SectionTwo } from "../src/components/SectionTwo";
+import { SectionThree } from "../src/components/SectionThree";
+import { SectionFour } from '../src/components/SectionFour';
 
 export const HomePage = () => {
   return (
@@ -23,6 +25,15 @@ export const HomePage = () => {
       <main>
         <SectionOne />
         <SectionTwo/>
+        <SectionThree/>
+          <section className="showed__up">
+          <div className=" border-b-[1px]  border-gray-50  border-opacity-50">
+
+</div>
+            {/* In future some content */}
+          </section>
+
+        <SectionFour/>
       </main>
     </>
   );

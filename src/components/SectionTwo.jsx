@@ -1,11 +1,12 @@
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 import { TwitterSvg } from '../assets/TwitterSvg';
 import { Github } from '../assets/Github';
+import { LinkedIn } from '../assets/LinkedIn';
 import { Link } from 'react-router-dom';
 export const SectionTwo = () => {
   return (
-   <section className='text-white'>
-      <h1 className='text-[1.4rem]'>The Full Stack Maestro</h1>
+   <section className='text-white mt-2 border-b-[1px]  border-gray-50 pb-4 border-opacity-50'>
+      <h1 className='text-[1.4rem] '>The Full Stack Maestro</h1>
       <ul className='mt-2 text-left text-[1rem] leading-10'>
         <li>
           <p><ArrowRightOutlinedIcon sx={{marginLeft:'-5px'}} /> Nothing to everything in the stack.</p>
@@ -18,27 +19,7 @@ export const SectionTwo = () => {
         </li>
       </ul>
            
-           <footer>
-
-        <div className='mt-10 text-center flex justify-center flex-col'>
-            <p className='text-[1.2rem]'>Send Me hi 👋</p>
-            <nav className=''>
-            <div className='centered'>
-
-           <Link>
-
-           <Github className='' />
-           </Link>
-           <Link to="/">
-            <TwitterSvg className='down_cl'/>
-           </Link> 
-
-            </div>
-            </nav>
-        </div>
-       
-
-           </footer>
+          
    </section>
   );
 };
